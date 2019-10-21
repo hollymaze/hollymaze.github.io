@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wild West Virginia</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500&display=swap" rel="stylesheet">
+	
+	<!-- Fontawesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<!-- Custom CSS -->
+	<link rel ="stylesheet" type ="text/css" href ="wildlifeBlog.css">
+</head>
+
+<body>
+<!-- header -->
+	<div id="header" class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div class="jumbotron jumbotron-fluid">
+					<h1>Wild West Virginia</h1>
+					<h4>Discovering the Mountain State's Wild & Wonderful Natural Wonders</h4>
+					<button id="followBtn" type="button" class="btn-lg">Follow Me!</button>
+				</div>
+			</div>	
+		</div>	
+	</div>
+
+<!-- body left section -->	
+	<div class="container-fluid">
+  		<div class="row">
+  			<div id="leftCol" class="col-2">
+  				<div class="container">
+	  				<div id="recentPosts" class="sideBoxes">
+						<h3>Recent Posts</h3>
+						<ul>
+							<li><i class="fas fa-pencil-alt"></i> April 17, 2017 <br />
+							Pickerel Frog</li>
+						</ul>
+						<ul>
+							<li><i class="fas fa-pencil-alt"></i> April 12, 2017 <br />
+							Pond Pest Control</li>
+						</ul>
+						<ul>
+							<li><i class="fas fa-pencil-alt"></i> April 9, 2017 <br />
+							Post Does Not Exist</li>
+						</ul>
+					</div>
+
+	  				<div id="tags" class="sideBoxes">
+						<h3>Tags</h3>
+						<ul>
+							<li><i class="fas fa-hashtag"></i> Amphibians</li>
+							<li><i class="fas fa-hashtag"></i> Arachnids</li>
+							<li><i class="fas fa-hashtag"></i> Birds</li>
+							<li><i class="fas fa-hashtag"></i> Fish</li>
+							<li><i class="fas fa-hashtag"></i> Herbaceous Plants</li>
+							<li><i class="fas fa-hashtag"></i> Insects</li>
+							<li><i class="fas fa-hashtag"></i> Invasive Species</li>
+							<li><i class="fas fa-hashtag"></i> Mammals</li>
+							<li><i class="fas fa-hashtag"></i> Mollusks</li>
+							<li><i class="fas fa-hashtag"></i> Reptiles</li>
+							<li><i class="fas fa-hashtag"></i> Trees</li>
+							<li>See More</li>
+						</ul>		
+					</div>
+					
+					<div id="archive" class="sideBoxes">
+						<h3>Archives</h3>
+						<ul>
+							<!-- when you click on a year, months appear -->
+							<li>2019</li>
+							<li>2018</li>
+							<li>2017</li>
+						</ul>
+					</div>	
+				</div>	
+    		</div>
+
+<!-- middle body section -->
+    		<div id="middleCol" class="col-8">
+    			<div id="postfeed">
+	      			<div class="post">
+	      				<div class="postHeading">
+							<h2 class="postTitle">Pond Pest Control</h2>
+							<h3>Posted April 12, 2017</h3>
+							<p><i class="fas fa-hashtag"></i> Arachnids</p><!--make this a tag-->
+							<label for="likeButton">Like this post (Do it!)</label>
+							<button id="likeButton"><i class="fas fa-heart"></i></button>
+						</div>
+							<div class="row">
+								<div class="col">
+									<img class="postImages" src="images/postImages/Lycosidae.jpg">
+								</div>
+
+								<div class="col">
+									<p class="postText"><span class="firstLetter">I</span>n the summer of 2016, I encountered one of the largest spiders I've ever personally come across (aside from wild tarantulas in Arizona, anyway). I was part of a group of wildlife students sampling aquatic populations in a small water reservoir in North Central West Virginia. As we hauled our seine net up the bank through the tall grass, we flushed out all kinds of small creatures including frogs, salamanders, many different kinds of insects, and a very large spider. Judging by the body shape, size, and eye arrangement of the spider, my best guess is that it belongs to the Lycosidae family, known collectively as wolf spiders. These spiders hunt on foot, without the use of a web, and have very keen eyesight. Although I'm sure if you provoked one long enough it could bite you, they pose no significant threat to humans and will do their best to get away from you if you encounter one. As you can see in the photo, this spider in particular had very good camouflage, and most other Lycosidae species are likewise cryptically colored to suit their preferred environments.</p>
+							</div>
+						</div>
+						<div class="commentSection">
+							<!-- Need to set size limit of comment, and put label on top of comment box. Also need to add functionality to store/display comments -->
+							<label for="comment">Leave a comment:</label>
+							<input type="text" class="comment" name="comment"></input>
+
+							<div class="showComments">
+							</div>
+						</div>
+					</div>
+<!-- End of post -->
+					<!-- <div class="post">
+	      				<div class="postHeading">
+							<h2 class="postTitle">Pickerel Frog<br />
+						 	(Lithobates palustris)</h2>
+							<h3>Posted April 17, 2017</h3>
+							<p><i class="fas fa-hashtag"></i> Amphibians</p>
+							<label for="likeButton">Like this post (Do it)</label>
+							<button id="likeButton"><i class="fas fa-heart"></i></button>
+						</div>
+							<div class="row">
+								<div class="col-6">
+									<img class="postImages" src="images/postImages/PickerelFrog1.jpg">
+								</div>
+								<div class="col-6">
+									<img class="postImages" src="images/postImages/PickerelFrog2.jpg">
+								</div>
+						</div>
+						<div class="col postText">
+							<p><span class="firstLetter">T</span>he pickerel frog (Lithobates palustris) is an amphibian native to West Virginia, often found near bodies of slow-moving or still water such as ponds or reservoirs. A friend of mine caught this little guy in a seine net during the same pond study I referenced in my last blog post; we ended up letting him go (unharmed) once we were done collecting our samples. Although in this case we used our bare hands to free the frog and move him out of the way, I don't recommend handling pickerel frogs if you can help it because they can secrete a mild toxin from their skin. This toxin serves as a defense mechanism to deter predators such as birds, mammals, toads, and snakes. These little frogs are able to live both in water and on land; the reduced webbing on their front feet allows them to walk freely on land, while the webbing on their back feet helps them to swim. Pickerel frogs can be distinguished from similar-looking species such as the northern leopard frog by the rectangular-shaped brown markings along thier backs. These markings are usually arranged pretty neatly in rows, while the leaopard frog's markings are more circular and less organized. Pickerel frogs feed mainly on invertebrates such as aquatic, terrestrial, and flying insects. As an amphibian, these creatures are very sensitive to changes in the environment and in some areas have been heavily impactd by pollution and acid mine drainage.</p>
+						</div>
+						<div class="commentSection">
+							<label for="comment">Leave a comment:</label>
+							<input type="text" class="comment" name="comment"></input>
+						</div>
+					</div> -->
+				</div>
+    		</div>
+<!-- End post -->
+
+ <!-- body right section -->
+			<div id="rightCol" class="col-2">
+				<div class="container">
+					<div class="row">
+	  					<div class="col-8">
+	  						<input id="searchBox" type="search" name="tagSearch" placeholder="Search Posts">
+	  					</div>
+						<div class="col-4">
+							<button id="searchButton"><i class="fas fa-search"></i></button>
+						</div>
+					</div>
+
+					<div id="aboutMe" class="sideBoxes">
+						<h3>Hello There!</h3>
+						<img src="images/aboutMe.jpg">
+						<p>My name is Holly and I'm a graduate of the Wildlife and Fisheries program at WVU and a lifelong nature lover. I enjoy learning about and sharing with others all the amazing creatures I find while exploring wild and wonderful West Virginia.</p>
+					</div>
+
+					<div id="socialArea" class="sideBoxes">
+						<h3>Top Followers</h3>
+							<ul>
+								<li><i class="far fa-star"></i> A follower</li>
+								<li><i class="far fa-star"></i> A follower</li>
+								<li><i class="far fa-star"></i> A follower</li>
+							</ul>
+						<h3>Recent Comments</h3>
+							<ul>
+								<li><i class="fas fa-comment"></i> This is a comment</li>
+								<li><i class="fas fa-comment"></i> This is a comment</li>
+								<li><i class="fas fa-comment"></i> This is a comment</li>
+							</ul>
+					</div>
+				</div>	
+    		</div>	
+  		</div>
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

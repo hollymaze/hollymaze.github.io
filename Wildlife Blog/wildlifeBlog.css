@@ -1,0 +1,200 @@
+
+.jumbotron {
+	text-align: center;
+	background-image: url(images/pathmod.jpg);
+	background-position: top;
+	border: 2px solid black;
+	color: white;
+	margin: 0 auto;
+	height: 400px;
+}
+
+.jumbotron h1,h4 {
+	position: center;
+	color: white;
+	font-family: "Mansalva", cursive;
+	font-size: 2em;
+	text-shadow: 5px 5px black;
+}
+
+.jumbotron h1 {
+	font-size: 6em;
+}
+
+#followBtn {
+	margin-top: 50px;
+	/*background: linear-gradient(to right, #83bf6b, #e3e346, #dba0c8) !important;*/
+	background: #d4b935;
+	border: 3px solid white;
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+	/*transition: all 0.4s ease 0s;*/
+}
+
+/*#followBtn:hover {
+	background: #a3297e;
+	border: 3px solid white;
+	color: white;
+	transition: all 0.4s ease 0s;
+}*/
+
+body {
+	/*background-image: url(images/138.jpg);*/
+	background: #113604;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+}
+
+h3 {
+	font-family: "Kalam", cursive;
+}
+
+ul {
+	text-align: left;
+	list-style: none;
+	/*margin-left: 0;
+	padding-left: 1.2em;*/
+	text-indent: -1.2em;
+}
+/*Might not need this code for the bullet icons
+/*li:before {
+	display: block;
+	float: left;
+	width: 1.2em;
+}*/
+
+.sideBoxes {
+	text-align: center;
+	border: 2px solid black;
+	background-image: url(images/woodgrain.jpg);
+	background-size: cover;
+	/*background: #2e2316;*/
+	width: 90%;
+	padding: 10px 20px;
+	margin: 20px 10px;
+}
+
+#recentPosts h3 {
+	text-align: center;
+}
+
+#recentPosts {
+	text-align: left;
+}
+
+/*#tags ul{
+	list-style: none;
+	text-align: left;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}*/
+
+#archive h3 {
+	text-align: center;
+}
+
+#archive {
+	text-align: left;
+}
+
+#postfeed {
+	/*background: #2e2316;*/
+	background-image: url(images/woodgrain.jpg);
+	background-size: 70%;
+	width: 100%;
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+
+.post {
+	/*border-bottom: 5px solid white;*/
+	margin-bottom: 20px;
+}
+
+.postHeading {
+	text-align: center;
+	padding: 20px;
+}
+
+.postTitle {
+	font-family: "Kalam", cursive;
+	font-size: 3em;
+}
+
+#likeButton {
+	border-radius: 5px;
+	background-color: #2e2316;
+	/*background-color: #83bf6b;*/
+	color: #e85f96;
+	margin: 10px;
+}
+
+.postImages {
+	width: 100%;
+	height: 100%;
+	border: 3px solid white;
+}
+
+.postText {
+	height: 100%;
+	border: 3px solid white;
+	background: #2e2316;
+	padding: 20px 30px;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 30px;
+}
+
+span {
+	font-size: 2em;
+}
+
+.commentSection {
+	border: 3px solid white;
+	height: 300px;
+	padding: 20px;
+	margin: 10px 0;
+}
+
+.commentSection label {
+	padding-right: 20px;
+	font-size: 20px;
+}
+
+.comment {
+	height: 100px;
+	width: 50%;
+}
+
+.showComments {
+	border: 3px solid white;
+	background: #2e2316;
+	height: 50%;
+	margin-top: 20px;
+}
+
+#searchBox {
+	/*width: 100%;*/
+	margin: 15px 0;
+	border-radius: 5px;
+}
+
+#searchButton {
+	margin: 15px 0 20px 0;
+	border-radius: 5px;
+	background-color: #2e2316;
+	color: white;
+}
+
+#aboutMe img {
+	height: 150px;
+	width: 150px;
+	border: 3px solid white;
+	margin-bottom: 10px;
+}
+
+#socialArea ul {
+	text-align: left;
+}
