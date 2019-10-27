@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Hungry Owl</title>
+
+	<!-- Fontawesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="HungryOwl.css"/>
+
+	<!--jQuery v 3.4.1-->
+	<!-- <script src="jQuery/jquery.min.js"></script> -->
+</head>
+
+<body>
+<!--start of row one-->
+	<div class="row">
+<!--left column-->
+		<div id="leftCol" class="col-3 d-none d-md-block">
+			<div class="sideborder">
+				<img src="images\homepage\lunch1.jpg">
+				<img src="images\homepage\lunch2.jpg">
+				<img src="images\homepage\lunch3.jpg">
+			</div>
+		</div>
+
+<!--start of middleBody-->
+		<div id="middleBody" class="col-md-6">
+			<div class="header">
+				<img src="images\homepage\owl.jpg" width="150">
+				<h1>The Hungry Owl</h1>
+				<h4>205 George Street St. Marys, WV 26170</h4>
+				<h3>(304) 305-0722</h3>
+			</div>
+
+			<nav id="navbar" class="navbar navbar-expand">
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+  				</button>
+
+  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     					<li class="nav-item active">
+       						 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="about.html">About Us</a>
+     					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="ourfood.html">Our Food</a>
+      					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="#">Reviews</a>
+      					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="#">Events</a>
+      					</li>
+    				</ul>
+  				</div>
+			</nav>
+
+			<div class="container1">
+				<h4>Follow Us on <a href="https://www.facebook.com/The-Hungry-Owl-LLC-125542747990934/" target="_blank"><button id="fbButton"><i class="fab fa-facebook-square"></i> Facebook!</button></a></h4>
+			</div>
+	
+			
+			<div class="paragraph">
+				<h2>Delivering home-style lunches to your workplace!</h2>
+
+				<p>Welcome to the Hungry Owl's website! We are an order-out style restaurant that prepares hearty and delicious meals for pick-up or delivery to local business locations. Don't want to spend your entire lunch break trying to find something to eat? Pre-order a lunch from us and we'll bring it to you!</p>
+				<p> Our menu changes weekly, so we are always offering a fresh variety of delicous meals to fit every taste. We encourage our patrons to pre-order, so we can ensure we have enough lunches to meet demand. Our lunches are also available for pick-up at our convenient pick-up window.</p>
+				<p>So take a look at our menu and give us a call (or submit an online order) to get your lunch today!</p>
+			</div>
+		</div>	
+<!--end of middleBody-->
+<!--right column-->
+		<div id="rightCol" class="col-3 d-none d-md-block">
+			<div class="sideborder">
+				<img src="images\homepage\lunch4.jpg">
+				<img src="images\homepage\lunch5.jpg">
+				<img src="images\homepage\lunch6.jpg">
+			</div>
+		</div>
+	</div>	
+<!--start of row two-->
+	<div id="row2" class="row">
+		<div class="col-12 col-lg-4 order-2 order-lg-1">
+			<div class="orderform">
+				<h2>Online Order Form</h2>
+				<!--need to update next line to <form action="some place" method="get or post"> once back end is developed-->
+				<form>
+					<div>
+						<label for="firstName">First Name*</label>
+						<input type="text" name="firstName" id="firstName" required>
+					</div>
+					<div>
+						<label for="lastName">Last Name*</label>
+						<input type="text" name="lastName" id="lastName" required>
+					</div>
+					<div>
+						<label for="whichLunch">Lunch Selection*</label>
+						<select name="whichLunch" id="whichLunch" required>
+							<option value="mondayBeef">Beef Taco Salad
+							</option>
+							<option value="mondayChicken">Chicken Taco Salad
+							</option>
+							<option value="tuesday">Chicken Caprese Sandwich
+							</option>
+							<option value="wednesday">Stuffed Shells</option>
+							<option value="thursday">Cheeseburger Wraps
+							</option>
+							<option value="friday">Meatloaf
+							</option>
+						</select>
+					</div>
+					<div>
+						<label for="numberOfLunches">Number of Lunches*</label>
+						<input type="number" name="numberOfLunches" id="numberOfLunches" required>
+					</div>
+					<div>
+						<label for="method">Method*</label>
+						<select name="method" id="method" required>
+							<option value="delivery">Delivery</option>
+							<option value="pickUp">Pick-up</option>
+						</select>
+					</div>
+					<div>
+						<label for="specialRequests">Special Requests</label>
+						<textarea name="specialRequests" id="specialRequests"></textarea>
+					</div>
+					<div>
+						<label for="businessName">Business Name*</label>
+						<input type="text" name="businessName" id="businessName" required>
+					</div>
+					<div>
+						<label for="contactPhone">Contact Phone Number*</label>
+						<input id="contactPhone" type="number" name="contactPhone" required>
+					</div>
+					<div>
+						<label for="deliveryAddress">Business Address</label>
+						<textarea name="deliveryAddress" id="deliveryAddress"></textarea>
+					</div>
+					<h4>* Required field</h4>
+					<br>
+					<input type="submit" name="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+
+		<div class="col-12 col-lg-4 order-1 order-lg-2 d-flex justify-content-center">
+			<div id="menu">
+				<h2>This Week's Menu:</h2> 
+				<img src="images\homepage\menu.jpg">
+			</div>
+		</div>
+
+		<div class="col-12 col-lg-4 order-3">
+			<div id="merch">
+				<h2>We Have Merch!</h2>
+				<div class="row">
+					<div class="col">
+						<p>We have multiple shirt designs available in sizes medium, large, and extra large. Show your support for your favorite restaurant in town!</p>
+						<p>All sizes currently priced at $15.00</p>
+					</div>
+					<div class="col">
+						<img src="images\homepage\shirts2.jpg" width="300">
+					</div>
+				</div>
+				<div class="row">
+					<div id="origShirts" class="col">
+						<img src="images\homepage\shirts.jpg" width="500">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+
+<script type="text/javascript" src="HungryOwl.js"></script>
+<!-- Boostrap additional scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+	
+</body>
+</html>
