@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<!--jQuery compressed file-->
+	<script type="text/javascript" src="assets/js/lib/jquery-3.4.1.min.js"></script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+
+	<!-- Fontawesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/ToDoList.css">
+</head>
+<body>
+<div id="container">
+	<!--had to add a span around the <i> tag below to enable jQuery
+	functionality with Font Awesome version 5-->
+	<h1>To-Do List<span id="plus"><i class="fas fa-plus"></i></span></h1>
+	
+	<input type="text" name="addNew" placeholder="Add a New To-Do">
+	<ul>
+		<li><span><i class="far fa-trash-alt"></i></span> Buy Groceries</li>
+		<li><span><i class="far fa-trash-alt"></i></span> Wash the Car</li>
+		<li><span><i class="far fa-trash-alt"></i></span> Feed the Dog</li>
+		<li><span><i class="far fa-trash-alt"></i></span> Do Laundry</li>
+		<li><span><i class="far fa-trash-alt"></i></span> Pay Bills</li>
+		<li><span><i class="far fa-trash-alt"></i></span> Kill Voldemort</li>
+		<li><span><i class="far fa-trash-alt"></i></span> Order Pizza</li>
+		<li><span><i class="far fa-trash-alt"></i></span> Learn How to Code</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="assets/js/ToDoList.js"></script>
+</body>
+</html>
